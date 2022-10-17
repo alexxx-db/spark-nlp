@@ -62,7 +62,7 @@ ner_converter = nlp.NerConverter()\
 
 nlpPipeline = Pipeline(stages=[documentAssembler,sentenceDetector,tokenizer,embeddings,ner_model,ner_converter])
 
-data = spark.createDataFrame([["Each party will promptly return to the other upon request any Confidential Information of the other party then in its possession or under its control."]]).toDF("text")
+data = spark.createDataFrame([["""it has the right , without restriction , to grant the licenses granted under this Agreement."""]]).toDF("text")
 
 result = nlpPipeline.fit(data).transform(data)
 ```
@@ -73,14 +73,11 @@ result = nlpPipeline.fit(data).transform(data)
 
 ```bash
 
-+------------------------+-------------------------------+
-|chunk                   |entity                         |
-+------------------------+-------------------------------+
-|Each party              |CONFIDENTIALITY_SUBJECT        |
-|will promptly return    |CONFIDENTIALITY_ACTION         |
-|other                   |CONFIDENTIALITY_INDIRECT_OBJECT|
-|Confidential Information|CONFIDENTIALITY                |
-+------------------------+-------------------------------+
++----------------------------------------------------------------------------------------+--------+
+|chunk                                                                                   |entity  |
++----------------------------------------------------------------------------------------+--------+
+|has the right , without restriction , to grant the licenses granted under this Agreement|WARRANTY|
++----------------------------------------------------------------------------------------+--------+
 
 ```
 
@@ -105,19 +102,23 @@ In-house annotated examples from CUAD legal dataset
 ## Benchmarking
 
 ```bash
-                                   precision    recall  f1-score   support
+## Benchmarking
 
-                B-CONFIDENTIALITY     0.9077    0.9219    0.9147        64
-         B-CONFIDENTIALITY_ACTION     1.0000    1.0000    1.0000        53
-B-CONFIDENTIALITY_INDIRECT_OBJECT     0.9419    0.9529    0.9474        85
-        B-CONFIDENTIALITY_SUBJECT     0.9697    1.0000    0.9846        32
-                I-CONFIDENTIALITY     0.9302    0.9091    0.9195        88
-         I-CONFIDENTIALITY_ACTION     1.0000    0.9825    0.9912        57
-I-CONFIDENTIALITY_INDIRECT_OBJECT     0.9744    0.8444    0.9048        45
-        I-CONFIDENTIALITY_SUBJECT     1.0000    1.0000    1.0000        25
-                                O     0.9913    0.9950    0.9932      1604
+```bash
+                            precision    recall  f1-score   support
 
-                         accuracy                         0.9839      2053
-                        macro avg     0.9683    0.9562    0.9617      2053
-                     weighted avg     0.9839    0.9839    0.9838      2053
+                B-WARRANTY     0.8993    0.9178    0.9085       146
+         B-WARRANTY_ACTION     1.0000    0.9318    0.9647        44
+B-WARRANTY_INDIRECT_OBJECT     1.0000    0.9474    0.9730        19
+        B-WARRANTY_SUBJECT     0.8554    0.9726    0.9103        73
+                I-WARRANTY     0.9695    0.9618    0.9656      1885
+         I-WARRANTY_ACTION     0.9515    0.9800    0.9655       100
+I-WARRANTY_INDIRECT_OBJECT     0.8333    0.8333    0.8333         6
+        I-WARRANTY_SUBJECT     1.0000    0.9444    0.9714        36
+                         O     0.9758    0.9772    0.9765      3381
+
+                  accuracy                         0.9698      5690
+                 macro avg     0.9428    0.9407    0.9410      5690
+              weighted avg     0.9700    0.9698    0.9698      5690
+```
 ```
