@@ -134,7 +134,7 @@ val result = pipeline.fit(data).transform(data)
 
 ```bash
 +----------------+-----------+
-|ticker          |label      |
+|chunk           |label      |
 +----------------+-----------+
 |Dhar            |GPE        |
 |Sikandar        |RESPONDENT |
