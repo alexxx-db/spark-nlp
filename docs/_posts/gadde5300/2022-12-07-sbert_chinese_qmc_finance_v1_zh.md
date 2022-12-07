@@ -1,10 +1,10 @@
 ---
 layout: model
-title: Chinese BERT Sentence Embeddings (from DMetaSoul)
+title: Chinese Financial BERT Sentence Embeddings (from DMetaSoul)
 author: John Snow Labs
 name: sbert_chinese_qmc_finance_v1
 date: 2022-12-07
-tags: [zh, chinese, embeddings, transformer, open_source, tensorflow]
+tags: [zh, chinese, embeddings, transformer, open_source, tensorflow, finance]
 task: Embeddings
 language: zh
 edition: Spark NLP 4.2.4
@@ -18,7 +18,7 @@ use_language_switcher: "Python-Scala-Java"
 
 ## Description
 
-Pretrained BERT Sentence Embeddings model, adapted from Hugging Face and curated to provide scalability and production-readiness using Spark NLP. `sbert-chinese-qmc-finance-v1` is a Chinese model originally trained by `DMetaSoul`.
+Pretrained Financial BERT Sentence Embeddings model, adapted from Hugging Face and curated to provide scalability and production-readiness using Spark NLP. `sbert-chinese-qmc-finance-v1` is a Chinese model originally trained by `DMetaSoul`.
 
 {:.btn-box}
 <button class="button button-orange" disabled>Live Demo</button>
