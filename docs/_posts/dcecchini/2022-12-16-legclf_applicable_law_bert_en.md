@@ -1,6 +1,6 @@
 ---
 layout: model
-title: Legal Applicable Law Document Classifier (Bert Sentence Embeddings)
+title: Legal Applicable Law Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_applicable_law_bert
 date: 2022-12-16

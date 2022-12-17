@@ -1,6 +1,6 @@
 ---
 layout: model
-title: Legal Confidential Information Document Classifier (Bert Sentence Embeddings)
+title: Legal Confidential Information Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_confidential_information_bert
 date: 2022-12-16

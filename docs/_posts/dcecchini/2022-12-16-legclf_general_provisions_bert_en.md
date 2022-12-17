@@ -1,6 +1,6 @@
 ---
 layout: model
-title: Legal General Provisions Document Classifier (Bert Sentence Embeddings)
+title: Legal General Provisions Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_general_provisions_bert
 date: 2022-12-16

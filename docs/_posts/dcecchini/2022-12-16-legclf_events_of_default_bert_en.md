@@ -1,6 +1,6 @@
 ---
 layout: model
-title: Legal Events Of Default Document Classifier (Bert Sentence Embeddings)
+title: Legal Events Of Default Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_events_of_default_bert
 date: 2022-12-16

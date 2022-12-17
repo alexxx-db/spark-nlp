@@ -1,6 +1,6 @@
 ---
 layout: model
-title: Legal Defined Terms Document Classifier (Bert Sentence Embeddings)
+title: Legal Defined Terms Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_defined_terms_bert
 date: 2022-12-16

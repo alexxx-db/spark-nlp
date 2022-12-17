@@ -1,6 +1,6 @@
 ---
 layout: model
-title: Legal Representations And Warranties Of The Company Document Classifier (Bert Sentence Embeddings)
+title: Legal Representations And Warranties Of The Company Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_representations_and_warranties_of_the_company_bert
 date: 2022-12-16
