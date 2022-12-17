@@ -4,7 +4,7 @@ title: Legal Confidential Information Clause Binary Classifier (Bert Sentence Em
 author: John Snow Labs
 name: legclf_confidential_information_bert
 date: 2022-12-16
-tags: [en, legal, classification, licensed, bert, confidential, information, tensorflow]
+tags: [en, legal, clauses, classification, licensed, bert, confidential, information, tensorflow]
 task: Text Classification
 language: en
 edition: Legal NLP 1.0.0

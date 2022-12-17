@@ -4,7 +4,7 @@ title: Legal Representations And Warranties Of The Company Clause Binary Classif
 author: John Snow Labs
 name: legclf_representations_and_warranties_of_the_company_bert
 date: 2022-12-16
-tags: [en, legal, classification, licensed, bert, representations, and, warranties, of, the, company, tensorflow]
+tags: [en, legal, clauses, classification, licensed, bert, representations, and, warranties, of, the, company, tensorflow]
 task: Text Classification
 language: en
 edition: Legal NLP 1.0.0

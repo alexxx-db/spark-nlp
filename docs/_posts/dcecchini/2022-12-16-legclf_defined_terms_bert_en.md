@@ -4,7 +4,7 @@ title: Legal Defined Terms Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_defined_terms_bert
 date: 2022-12-16
-tags: [en, legal, classification, licensed, bert, defined, terms, tensorflow]
+tags: [en, legal, clauses, classification, licensed, bert, defined, terms, tensorflow]
 task: Text Classification
 language: en
 edition: Legal NLP 1.0.0

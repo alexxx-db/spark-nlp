@@ -4,7 +4,7 @@ title: Legal Limitation Of Liability Clause Binary Classifier (Bert Sentence Emb
 author: John Snow Labs
 name: legclf_limitation_of_liability_bert
 date: 2022-12-16
-tags: [en, legal, classification, licensed, bert, limitation, of, liability, tensorflow]
+tags: [en, legal, clauses, classification, licensed, bert, limitation, of, liability, tensorflow]
 task: Text Classification
 language: en
 edition: Legal NLP 1.0.0

@@ -4,7 +4,7 @@ title: Legal Applicable Law Clause Binary Classifier (Bert Sentence Embeddings)
 author: John Snow Labs
 name: legclf_applicable_law_bert
 date: 2022-12-16
-tags: [en, legal, classification, licensed, bert, applicable, law, tensorflow]
+tags: [en, legal, clauses, classification, licensed, bert, applicable, law, tensorflow]
 task: Text Classification
 language: en
 edition: Legal NLP 1.0.0

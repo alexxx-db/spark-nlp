@@ -4,7 +4,7 @@ title: Legal Representations And Warranties Clause Binary Classifier (Bert Sente
 author: John Snow Labs
 name: legclf_representations_and_warranties_bert
 date: 2022-12-16
-tags: [en, legal, classification, licensed, bert, representations, and, warranties, tensorflow]
+tags: [en, legal, clauses, classification, licensed, bert, representations, and, warranties, tensorflow]
 task: Text Classification
 language: en
 edition: Legal NLP 1.0.0
